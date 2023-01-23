@@ -45,6 +45,7 @@ ontario = pd.read_csv('ont.csv')
 x=ontario['year']
 y=ontario['Lake Ontario annual averages']
 
+
 plt.plot(x,y)
 # -
 
