@@ -25,15 +25,13 @@ import matplotlib.pyplot as plt
 # column, as a function of time years
 
 MHU = pd.read_csv("mhu.csv", skiprows=0)
-plt.plot(MHU["year"], MHU["lake levels"])
+plt.plot(MHU["time"], MHU["lake average"])
 
 
 # PART 2
 # Using the Superior Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
-superior = pd.read_csv("sup.csv", skiprows=0)
-plt.plot(superior["year"], superior["lake levels"])
 
 
 # PART 3
