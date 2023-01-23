@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-# +
-# """"
-# To use this notebook for your in-class assignment, you will need these 
-# files, which you shoujld have downloaded:
-# * mhu.csv -- Lake Michigan and Lake Huron
-# * sup.csv -- Lake Superior
-# * eri.csv -- Lake Erie
-# * ont.csv -- Lake Ontario
-
-# As instructed in the in-class activity notebook for today, you are 
-# only expected to complete one PART below. Do not worry if your group 
-# is not big enough to finish all parts below, but if you have extra 
-# time, you're welcome to do so.
-# """"
-=======
 e""""
 To use this notebook for your in-class assignment, you will need these 
 files, which you shoujld have downloaded:
@@ -27,11 +11,9 @@ only expected to complete one PART below. Do not worry if your group
 is not big enough to finish all parts below, but if you have extra 
 time, you're welcome to do so.
 """"
->>>>>>> Xu
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-# -
 
 
 import numpy as np
@@ -42,22 +24,19 @@ import matplotlib.pyplot as plt
 # Using the Michigan/Huron Dataset, plot the Water Level, the second 
 # column, as a function of time years
 
-<<<<<<< HEAD
-MHU = pd.read_csv("mhu.csv", skiprows=0)
-plt.plot(MHU["time"], MHU["lake average"])
-
-=======
 Michigan = pd.read_csv("mhu.csv")
 plt.plot(Michigan["time"],Michigan["lake average"])
 plt.xlabel("time")
 plt.ylabel("lake average")
->>>>>>> Xu
 
 # PART 2
 # Using the Superior Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
-
+Superior1 = pd.read_csv("sup.csv")
+plt.plot(Superior["year"],Superior["lake levels"])
+plt.xlabel("year")
+plt.ylabel("lake levels")
 
 # PART 3
 # Using the Erie Dataset, plot the Water Level, the second column, 
@@ -69,14 +48,6 @@ plt.ylabel("lake average")
 # Using the Ontario Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
-# +
-ontario = pd.read_csv('ont.csv')
-x=ontario['year']
-y=ontario['Lake Ontario annual averages']
-
-
-plt.plot(x,y)
-# -
 
 
 # PART 5
