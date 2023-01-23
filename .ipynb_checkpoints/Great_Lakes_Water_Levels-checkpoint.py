@@ -1,4 +1,4 @@
-""""
+e""""
 To use this notebook for your in-class assignment, you will need these 
 files, which you shoujld have downloaded:
 * mhu.csv -- Lake Michigan and Lake Huron
@@ -25,15 +25,15 @@ import matplotlib.pyplot as plt
 # column, as a function of time years
 
 Michigan = pd.read_csv("mhu.csv")
-plt.plot(Superior["year"],Superior["lake levels"])
-plt.xlabel("year")
+plt.plot(Michigan["time"],Michigan["lake average"])
+plt.xlabel("time")
 plt.ylabel("lake average")
 
 # PART 2
 # Using the Superior Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
-Superior = pd.read_csv("sup.csv")
+Superior1 = pd.read_csv("sup.csv")
 plt.plot(Superior["year"],Superior["lake levels"])
 plt.xlabel("year")
 plt.ylabel("lake levels")
