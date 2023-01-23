@@ -16,16 +16,24 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
 # PART 1
 # Using the Michigan/Huron Dataset, plot the Water Level, the second 
 # column, as a function of time years
 
+MHU = pd.read_csv("mhu.csv", skiprows=0)
+plt.plot(MHU["year"], MHU["lake levels"])
 
 
 # PART 2
 # Using the Superior Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
+superior = pd.read_csv("sup.csv", skiprows=0)
+plt.plot(superior["year"], superior["lake levels"])
 
 
 # PART 3
@@ -55,7 +63,7 @@ import matplotlib.pyplot as plt
 
 
 # PART 7
-#Using the Superior and Ontario Datasets, plot the Superior Water 
+# Using the Superior and Ontario Datasets, plot the Superior Water 
 # Level vs Ontario Water Level to see if there is any correlation 
 # between the water levels.
 
